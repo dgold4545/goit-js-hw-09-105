@@ -27,3 +27,13 @@ h1 {
   margin-top: 16px;
   text-align: center;
 }
+
+
+.sl-wrapper.simple-lightbox > .sl-counter {
+  color: #fff;
+}
+
+.sl-wrapper.simple-lightbox {
+  background-color: #2e2f42cc;
+  
+}
