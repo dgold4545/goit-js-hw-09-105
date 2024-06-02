@@ -5,13 +5,13 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 import { images } from '../arrayData/arrayImages';
-import { createImagesMarkup } from '../hellpers/createImagesMarkup';
+import { createGalleryMarkup } from '../hellpers/createGalleryMarkup';
 
 const refs = {
   gallery: document.querySelector('.gallery'),
 };
 
-refs.gallery.innerHTML = createImagesMarkup(images);
+refs.gallery.innerHTML = createGalleryMarkup(images);
 
 
 new SimpleLightbox('.gallery a', {

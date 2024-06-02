@@ -1,4 +1,4 @@
-export function createImagesMarkup(images) {
+export function createGalleryMarkup(images) {
   return images
     .map(({ preview, original, description }) => {
       return `<li class="gallery-item">
