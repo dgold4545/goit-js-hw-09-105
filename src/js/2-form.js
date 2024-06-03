@@ -35,7 +35,7 @@ refs.form.addEventListener('submit', event => {
   const message = refs.form.elements.message.value;
 
   if (!email || !message) {
-    alert('Fill please all fields');
+    alert('«Fill please all fields»');
   } else {
     console.log(formData);
   }
