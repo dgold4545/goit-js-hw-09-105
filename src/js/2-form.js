@@ -41,5 +41,6 @@ refs.form.addEventListener('submit', event => {
   }
 
   localStorage.removeItem(LS_KEY);
+
   event.currentTarget.reset();
 });
