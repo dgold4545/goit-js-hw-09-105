@@ -31,16 +31,9 @@ window.addEventListener('DOMContentLoaded', () => {
 refs.form.addEventListener('submit', event => {
   event.preventDefault();
 
-  // const formValue = new FormData();
-  // const inputValue = {
-  //   email: formValue.get('email'),
-  //   message: formValue.get('message'),
-  // };
-
   const email = refs.form.elements.email.value;
   const message = refs.form.elements.message.value;
 
-  // Перевіряємо, чи всі поля заповнені
   if (!email || !message) {
     alert('Fill please all fields');
   } else {
