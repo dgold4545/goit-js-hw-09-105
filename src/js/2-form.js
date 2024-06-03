@@ -15,8 +15,8 @@ const formData = {
 refs.form.addEventListener('input', event => {
   const dataFromForm = new FormData(event.currentTarget);
 
-  formData.email = dataFromForm.get('email');
-  formData.message = dataFromForm.get('message');
+  formData.email = dataFromForm.get('email').trim();
+  formData.message = dataFromForm.get('message').trim();
 
   saveToLocalStorage(LS_KEY, formData);
 });
