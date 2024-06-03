@@ -1,7 +1,7 @@
 'use strict';
-// Описаний в документації
+
 import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
+
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 import { images } from '../arrayData/arrayImages';
@@ -13,10 +13,8 @@ const refs = {
 
 refs.gallery.innerHTML = createGalleryMarkup(images);
 
-
 new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',
   captionDelay: 250,
 });
-
