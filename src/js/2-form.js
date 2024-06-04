@@ -31,8 +31,8 @@ window.addEventListener('DOMContentLoaded', () => {
 refs.form.addEventListener('submit', event => {
   event.preventDefault();
 
-  const email = refs.form.elements.email.value;
-  const message = refs.form.elements.message.value;
+  const email = refs.form.elements.email.value.trim();
+  const message = refs.form.elements.message.value.trim();
 
   if (!email || !message) {
     alert('«Fill please all fields»');
